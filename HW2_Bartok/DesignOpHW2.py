@@ -28,6 +28,7 @@ while error[i] > eps:
     fn.append(f(sol))
 
 # ||gradient(x)|| < eplison (some small number) 1e-3 or 1e-6
+print("Gradient Descent Convergence\n", sol)
 
 # calc f
 print("Newton")
@@ -49,10 +50,6 @@ plt.ylabel("Error")
 plt.suptitle("Convergence of Gradient Descent")
 plt.title("Initial guess [x3, x4] = [1,1]")
 plt.show()
-
-# calc phi
-
-# compare
 
 
 
