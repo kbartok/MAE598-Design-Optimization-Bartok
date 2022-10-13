@@ -171,11 +171,11 @@ def bayesian_optimisation(n_iters, sample_loss, bounds, x0=None, n_pre_samples=5
 
 
 # code to call optimization
-n_iters = 1000
+n_iters = 500
 f = lambda x: (4-2.1*x[0]**2+((x[0]**4)/3))*x[0]**2+x[0]*x[1]+(-4+4*x[1]**2)*x[1]**2
 bounds = np.array([[-3, 3], [-2, 2]])
 x1x2, output = bayesian_optimisation(n_iters, f, bounds, x0=None, n_pre_samples=5, gp_params=None, random_search=False, alpha=1e-5, epsilon=1e-7)
 minIndex = np.argmin(output)
-print(minIndex)
-print(output[minIndex])
-print(x1x2[minIndex])
+print("Min index: ", minIndex)
+print("Min value: ", output[minIndex])
+print("X1 and X2 at min: ", x1x2[minIndex])
