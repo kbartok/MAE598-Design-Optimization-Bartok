@@ -170,7 +170,7 @@ def bayesian_optimisation(n_iters, sample_loss, bounds, x0=None, n_pre_samples=5
     return xp, yp
 
 
-# code to call optimization
+# Code to call optimization and solve Problem 2
 n_iters = 500
 f = lambda x: (4-2.1*x[0]**2+((x[0]**4)/3))*x[0]**2+x[0]*x[1]+(-4+4*x[1]**2)*x[1]**2
 bounds = np.array([[-3, 3], [-2, 2]])
