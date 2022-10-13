@@ -52,6 +52,7 @@ while er >= eps:
 print('estimation A12 and A21 is: ', A)
 print('final loss is: ', loss.data.numpy())
 
+# Plotting
 P = P.detach().numpy()
 p = p.detach().numpy()
 x1 = x1.detach().numpy()
